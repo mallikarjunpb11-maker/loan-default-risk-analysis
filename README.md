@@ -1,4 +1,4 @@
-# Consumer Credit Risk Analytics & Policy Optimization
+# Loan Default Risk Analysis
 
 An end-to-end credit risk analytics pipeline and decision framework built on 1.3 million closed consumer loan records. This project identifies core drivers of default, develops an interpretable scorecard, and evaluates simulated underwriting policy interventions to reduce charge-offs without impairing origination volume.
 
