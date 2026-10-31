@@ -1,5 +1,4 @@
-# Loan Default Risk Analysis
-
+# Consumer Credit Risk Analytics & Policy Optimization
 
 An end-to-end credit risk analytics pipeline and decision framework built on 1.3 million closed consumer loan records. This project identifies core drivers of default, develops an interpretable scorecard, and evaluates simulated underwriting policy interventions to reduce charge-offs without impairing origination volume.
 
@@ -13,6 +12,26 @@ An end-to-end credit risk analytics pipeline and decision framework built on 1.3
   * **Defaults Prevented:** **68,879 defaults eliminated** (26.33% reduction in charge-offs).
   * **Volume Preserved:** **87.01% of originations retained** (1,133,840 loans).
   * **Portfolio Impact:** Brings overall default rate down from **20.07% to 16.99%**.
+
+---
+
+## Key Visual Insights & Risk Segmentation
+
+### 1. Risk Segmentation by Loan Grade & Stated Purpose
+Subprime loan grades and discretionary/high-interest loan purposes exhibit the highest default concentration across the portfolio.
+
+<p align="center">
+  <img src="reports/figures/default_rate_by_grade.png" width="48%" alt="Default Rate by Loan Grade" />
+  <img src="reports/figures/default_rate_by_purpose.png" width="48%" alt="Default Rate by Loan Purpose" />
+</p>
+
+### 2. Model Performance (ROC Curve) & Policy Trade-Off
+The logistic scorecard achieves regulatory-standard discrimination ($\text{AUC} = 0.702$). The policy simulation demonstrates how combined underwriting cutoffs (Policy 4) optimize default prevention against origination volume.
+
+<p align="center">
+  <img src="reports/figures/logistic_roc_curve.png" width="48%" alt="Logistic ROC-AUC Curve" />
+  <img src="reports/figures/underwriting_policy_tradeoff.png" width="48%" alt="Underwriting Policy Trade-Off" />
+</p>
 
 ---
 
